@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="presto-fetch-tools",
@@ -7,13 +7,12 @@ setup(
     author="Matteo Trudu",
     author_email="matteo@trudu.inaf",
     url="https://github.com/MattTrudu/presto-fetch-tools",
-    py_modules=["make_presto_csv"],
-    scripts = ['make_presto_csv.py'],
-    #entry_points={
-    #    "console_scripts": [
-    #        "make_presto_csv=make_presto_csv:main",
-    #    ],
-    #},
+    py_modules=["make_presto_csv"],  # file must be make_presto_csv.py
+    entry_points={
+        "console_scripts": [
+            "make-presto-csv=make_presto_csv:main",
+        ],
+    },
     python_requires=">=3.7",
     install_requires=[],
     classifiers=[
@@ -23,3 +22,4 @@ setup(
         "Topic :: Scientific/Engineering :: Astronomy",
     ],
 )
+
