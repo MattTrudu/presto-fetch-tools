@@ -8,11 +8,12 @@ setup(
     author_email="matteo@trudu.inaf",
     url="https://github.com/MattTrudu/presto-fetch-tools",
     py_modules=["make_presto_csv"],
-    entry_points={
-        "console_scripts": [
-            "make_presto_csv=make_presto_csv:main",
-        ],
-    },
+    scripts = ['make_presto_csv.py'],
+    #entry_points={
+    #    "console_scripts": [
+    #        "make_presto_csv=make_presto_csv:main",
+    #    ],
+    #},
     python_requires=">=3.7",
     install_requires=[],
     classifiers=[
