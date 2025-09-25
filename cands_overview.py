@@ -262,6 +262,7 @@ def main():
             )
 
     fig.suptitle(os.path.basename(args.csv), y=0.98, fontsize=12)
+    plt.show()
     out = args.out or os.path.splitext(args.csv)[0] + "_diag.png"
     fig.savefig(out, dpi=args.dpi, bbox_inches="tight")
     print(f"[OK] Saved: {out}")
