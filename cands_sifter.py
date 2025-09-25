@@ -337,7 +337,7 @@ def parse_args() -> Tuple[str, str, Params]:
     ap.add_argument("--dm-abs", type=float, default=1.0,
                     help="Absolute DM tolerance (default: 1.0 pc cm^-3)")
     ap.add_argument("--dm-frac", type=float, default=0.0,
-                    help="Fractional DM tolerance (e.g., 0.05 adds 5% of DM; default: 0.0)")
+                    help="Fractional DM tolerance (e.g., 0.05 adds 5 percent of DM; default: 0.0)")
 
     ap.add_argument("--storm-window", type=float, default=None,
                     help="If set (seconds), apply RFI storm filter using this sliding window")
